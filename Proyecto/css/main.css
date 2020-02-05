@@ -1,0 +1,1691 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/** Custom Properties **/
+:root {
+    --primario: red;
+    --secundario: #6eff51;
+    --primarioOscuro : rgb(156, 10, 69);
+    --fuentePrimaria : 'Arial', Helvetica, sans-serif;
+    --fuenteSecundaria : 'Poppins', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/**Session Bar**/
+.bar{
+max-width: 100%;
+width: 100%;
+background-color:  #ffffff;
+display: block;
+padding: -50px 0;
+
+}
+.arrange_div_top_bar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.div_top_bar{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.icon_school img{
+    margin: 0px 5px 0px 20px;
+    width: 70px;
+    height: -70px;
+}
+#title{
+    font-family: 'Oswald', sans-serif;
+}
+#opened_session_name{
+    padding-right: 10px;
+    padding-left: 30px;
+}
+#opened_session_name span{
+    text-decoration: none;
+    
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #0084ff;
+}
+#title{
+    padding-left: 10px;
+}
+#close_session{
+    position: relative; 
+}
+#close_session a{
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #000;
+    text-align: left;
+    background-color: #f0f0f0;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border: 0.5px solid#ededed;
+    margin-right: 10px;
+    width: 190px;
+    white-space: nowrap;
+    
+}
+#close_session a:hover{
+    background-color: #ff4c4c;
+    transition: all .3s ease;
+}
+
+@media only screen and (max-width: 1920px){
+    #title{
+        font-size: 1em;
+    }
+    #opened_session_name span{
+        font-size: 2em;
+    }
+    .icon_school img{
+        margin: 0px 5px 0px 20px;
+        width: 70px;
+    }
+    #close_session a{
+        padding: 10px 15px 10px 15px;
+        font-size: 1.4em;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 1080px){
+    #title{
+        font-size: 0.7em;
+    }
+    #opened_session_name span{
+        font-size: 1.5em;
+    }
+    .icon_school img{
+        margin: 5px 5px 5px 20px;
+        width: 60px;
+    }
+    #close_session a{
+        padding: 10px 15px 15px 10px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 720px){
+    #title{
+        font-size: 0.5em;
+    }
+    #opened_session_name span{
+        font-size: 1em;
+    }
+    .icon_school img{
+        margin: 10px 5px 10px 20px;
+        width: 50px;
+    }
+    #close_session a{
+        padding: 15px 15px 15px 15px;
+        font-size: 1em;
+        text-align: left;
+    }
+}
+
+
+/**Navegacion**/
+div.navegacion{
+    max-width: 100%;
+    width: 100%;
+    background-color: #dedede;
+}
+.fixed{
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+nav{
+    width: 1350px;
+    margin: 0 auto;
+    position: relative;
+}
+nav ul{
+    list-style: none;
+}
+nav > ul > li{
+    float: left;
+}
+nav ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+nav ul li a{
+    display: inline-block;
+    width: 225px;
+    color: #495057;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px 20px;
+}
+nav ul li a:hover{
+    background-color: #f7f7f7;
+}
+/**Segundo nivel**/
+nav ul ul{
+    position: absolute;
+    top: 100%;
+    background-color: rgba(222,222,222,0.7);
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul li:hover{
+    background-color: rgba(222,222,222,1);
+}
+
+/**Contenido principal login**/
+.login_body{
+    background-color:  #efefef;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+.login_contenedor{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 550px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+}
+.login_contenedor h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.login_contenedor fieldset input{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    padding: 0 40px 0 40px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 45px;
+}
+.login_contenedor fieldset a{
+    position: absolute;
+    font-size: 0.8em;
+    margin: -28px 0 0 -115px;
+    text-align: left;
+    text-decoration: none;
+}
+.login_contenedor fieldset i{
+    position: absolute;
+    padding: 10px 0 0 10px;
+    font-size: 1.5em
+}
+.pass_function{
+    position: relative;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+.container_button{
+    width: 40px!important;
+    position: absolute;
+    padding: 0 0!important;
+    right: 46px!important;
+    z-index: 3;
+    background-color: transparent!important;
+    border-color: transparent!important;
+    bottom: 0px!important;
+    
+    /*visibility: hidden;*/
+}
+
+.fa-eye{
+    position: relative;
+    padding: 0 0!important;
+    right: 50px!important;
+    bottom: 20px!important;
+    display: none;
+}
+.fa-eye-slash{
+    position: relative;
+    padding: 0 0!important;
+    right: 50px!important;
+    bottom: 20px!important;
+    display: block;
+}
+.login_contenedor fieldset .button_login{
+    margin-top: -10px;
+    padding: 0;
+    background-color: #0084ff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #ffffff;
+    width: 130px;
+}
+.login_contenedor fieldset .button:hover{
+    background-color: #006fd6;
+    transition: all .3s ease;
+}/*
+@media only screen and (max-width: 550px){
+    .login_contenedor{
+        background-color: white;
+        width: 100%;
+        margin: 100px auto;
+        padding: 0px;
+        text-align: center;
+        -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+        box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+    }
+    .principal_icon{
+        margin: 30px 0;
+    }
+    .login_contenedor fieldset .button_login{
+        margin-bottom: 20px;
+    }
+    .login_contenedor fieldset a{
+        padding-bottom: 20px; 
+    }
+    .container_button{
+
+    }
+    .container_button{
+        position: relative;
+        right: -180px!important;
+        top: -55px;
+    }
+    .fa-eye{
+        padding: 0 0!important;
+        right: 65px!important;
+        bottom: 80px!important;
+        display: none;
+    }
+    .fa-eye-slash{
+        padding: 0 0!important;
+        right: 65px!important;
+        bottom: 80px!important;
+        display: block;
+    }
+    .login_contenedor fieldset input{
+        padding-right: 55px; 
+    }
+}*/
+@media only screen and (max-width: 550px){
+    .login_body{
+        background-color:  white;
+    }
+    .login_contenedor{
+        background-color: white;
+        width: 100%;
+        margin: auto auto;
+        padding: 0px;
+        text-align: center;
+        -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+        box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+    }
+    .login_contenedor fieldset input{
+        margin-bottom: 10px;
+        padding-right: 40px; 
+        width: 100%;
+    }
+    .principal_icon_1{
+        margin: 140px 0 80px 0;
+        width: 200px;
+        height: 200px;
+    }
+    .login_contenedor fieldset a{
+        text-align: right;
+        margin: -28px 20px 0 -150px;
+        padding-bottom: 36px; 
+    }
+    .login_contenedor fieldset .button_login{
+        margin: 70px 0 -30px 0 ;
+        font-size: 1.3em;
+        width: 100%;
+    }
+    .container_button{
+        position: absolute;
+        right: 0!important;
+    }
+
+    .fa-eye{
+        position: relative;
+        padding: 0 0!important;
+        right: 10px!important;
+        bottom: 20px!important;
+        display: none;
+    }
+    .fa-eye-slash{
+        position: relative;
+        padding: 0 0!important;
+        right: 10px!important;
+        bottom: 20px!important;
+        display: block;
+    }
+}
+/**Pagina principal**/
+
+.principal{
+    background: white;
+    font-family: 'Oswald', sans-serif;
+}
+.principal_screen{
+    text-align: center;
+    padding: 100px;
+}
+.principal_screen p{
+    margin: 10px;
+    color: #0084ff;
+    font-size: 2em;
+}
+.principal_screen img{
+    width: 400px;
+    height: 400px;
+}
+
+/**Contenido principal general**/
+body{
+    background-color: #414141;
+    
+}
+.contenedor{
+    margin: 20px auto;
+    width: 1220px;
+    padding: 60px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+.contenido{
+    text-align: center;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 25px 0 35px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 35px 0 25px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+input{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2em;
+}
+.formInputSearch{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    padding: 0 8px 0 8px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 45px;
+}
+.formInput{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    padding: 0 8px 0 8px;
+    margin-bottom: 20px;
+    width: 550px;
+    height: 45px;
+}
+.formInputMailReport{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #FBEFEF;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    padding: 0 8px 0 8px;
+    margin-bottom: 20px;
+    width: 550px;
+    height: 45px;
+}
+.textAreaInput{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #FBEFEF;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    width: 550px;
+    height: 200px;
+}
+.textAreaAnswer{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    width: 550px;
+    height: 100px;
+}
+.text_area{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    padding: 0 8px 0 8px;
+    margin-bottom: 20px;
+    width: 550px;
+}
+.formInputSmall{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    padding: 0 8px 0 8px;
+    margin-bottom: 20px;
+    width: 275px;
+    height: 45px;
+}
+.button{
+    position: relative;
+    right: -360px;
+    padding: 0;
+    background-color: #0084ff;
+    border-radius: 10px;
+    height: 45px;
+    width: 130px;
+    border: 1px solid #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+.button:hover{
+    background-color: #0053a0;
+    transition: all .3s ease;
+}
+.button_registros{
+    position: relative;
+    right: -260px;
+    padding: 0;
+    background-color: #ff5f59;
+    border-radius: 10px;
+    height: 45px;
+    width: 180px;
+    border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #ffffff;
+    
+}
+.button_registros:hover{
+    background-color: #fd0800;
+    transition: all .3s ease;
+}
+/**Pop up**/
+.button_cancel{
+    padding: 0;
+    right: 0;
+    background-color: #ff5f59;
+    border-radius: 10px;
+    height: 45px;
+    width: 130px;
+    border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #ffffff;
+    
+}
+.button_cancel:hover{
+    background-color: #fd0800;
+    transition: all .3s ease;
+}
+.button_save{
+    padding: 0;
+    right: 0;
+    background-color: #0084ff;
+    border-radius: 10px;
+    height: 45px;
+    width: 130px;
+    border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #ffffff;
+}
+.button_save:hover{
+    background-color: #0053a0 ;
+    transition: all .3s ease;
+}
+/**----Pop up**/
+.clean{
+    background-color: #89c4fb;
+}
+
+.update{
+    background-color: #BDCC14;
+}
+.update:hover{
+    background-color: #93B309;
+    transition: all .3s ease;
+}
+.carga{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    width: 150px;
+}
+.pass_generator{
+    border: 0;
+    padding: 0;
+    left: 0px;
+    bottom: 20px;
+    background-color: #DF7401;
+}
+.pass_generator:hover{
+    background-color: #B45F04;
+}
+.pName{
+    text-align: left;
+    position: relative;
+    left: 300px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+p{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+p span{
+    color: #0084ff;
+}
+
+.div_tabla{
+    overflow: scroll;
+    width: 1100px;
+}
+.div_tabla_height{
+    height: 500px;
+}
+/**---Popup**/
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.black_layer{
+    display:none;
+    position: fixed;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    z-index: 3;
+    margin: -87px auto;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    left: 0px;
+}
+.popup_regularization_grades{
+    display:none;
+    position: absolute;
+    background-color: #fff;
+    margin: auto auto;
+    left:0;
+    right:0;
+    bottom: 0;
+    top: 0;
+    height: 350px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    z-index: 4;
+    text-align: center;
+}
+.arrange_grades_input{
+    position: relative;
+    text-align: right;
+    margin: 23px;
+    top: -30px;
+}
+.arrange_grades_buttons{
+    position: relative;
+    top: -60px;
+    text-align: right!important;
+}
+.arrange_grades_buttons_teachers{
+    position: relative;
+    top: -60px;
+    margin-top: 90px;
+    text-align: right!important;
+    right: 25px;
+}
+.arrange_grades_buttons:last-child{
+    margin: 0 25px 0 0;
+}
+.popup_regularization_grades P{
+    margin: 40px 0;
+}
+
+/**Popup**/
+/**Asignacion de materias Tabla materias registradas**/
+.table_all_subjects{
+    overflow: scroll;
+    width: 1100px;
+}
+.table_all_subjects_height{
+    max-height: 800px;
+}
+/**
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: blue;
+} 
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+} 
+::-webkit-scrollbar-button {
+    background-color: navy;
+}
+::-webkit-scrollbar-corner {
+    background-color: black;
+}**/
+.readOnly{
+    background-color: #495057;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+    
+  }
+  
+  table, th{
+    border: collapse;
+    padding: 0 10px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2em;
+    background-color: #0084ff;
+    color: white;
+  }
+
+  td{
+    border: collapse;
+    background-color: #dddddd;
+    color: #000;
+    font-family: 'PT Sans', sans-serif;
+    /*font-weight: bold;*/
+    font-size: 1em;
+    height: 40px;
+    padding: 10px; 
+    white-space:nowrap;
+    
+  }
+.tabla_entrada{
+    border-radius: 5px;
+        height: 40px;
+        width: 100%;
+        text-align: left;
+        background: white;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1em;
+        text-align: center;
+}
+.tabla_entrada_concentrado{
+    border-radius: 5px;
+        height: 40px;
+        width: 70px;
+        text-align: left;
+        background: white;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1em;
+        text-align: center;
+}
+
+.celda_izquierda{
+    padding-right: 10px;
+}
+.celda_derecha{
+    padding-left: 0px;
+}
+.celda_izquierda_engrane{
+    padding: 0 0;
+    text-align: left;
+    position: relative;
+}
+.celda_derecha_engrane{
+    padding: 0 0;
+    text-align: right;
+    position: relative;
+}
+label{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.invissible{
+    display:none;
+}
+#small_table{
+    width: 90%;
+    margin: 0 auto;
+}
+.tr_position_center{
+    text-align: center;
+}
+.arrange_tr_double{
+    width: 20%;
+}
+
+table{
+    -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+}
+table th {
+    color: white;
+    background-color: #0084ff;
+  }
+tr:nth-child(odd) td {
+    background-color: rgb(240, 240, 240);
+}
+tr:nth-child(even) td {
+    background-color: rgb(255, 255, 255);
+
+  }
+
+.td_center_content{
+    text-align: center;
+}
+.td_right_content{
+    text-align: right;
+}
+.td_left_content{
+    text-align: left;
+}
+
+.checkButton{
+    height: 20px;
+    width: 20px;
+}
+.textFormatCheckbox{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.moveLabel{
+    
+    text-align: left;
+    position: relative;
+    left: 275px;
+}
+.doubleColumn{
+    display:flex;
+    justify-content: center;
+}
+.smallInputArrange{
+    flex: 0 0 calc(50% - 17rem);
+    text-align: left;
+    padding-right: 10px;
+}
+.smallInputArange select{
+    width: 100%;
+}
+#irregular_student_options{
+    display: none;
+}
+.blocked_input{
+    background-color: rgb(230, 230, 230);
+}
+/** Carga Materias**/
+
+.labelSemestreCarga{
+    position: relative;
+    right: 225px;
+}
+.labelBachCarga{
+    position: relative;
+    right: 215px;
+}/*
+.label_boleta_semestre{
+    position: relative;
+    right: 185px
+}
+.label_boleta_bachillerato{
+    position: relative;
+    left: 25px
+}*/
+.label_boleta_ciclo{
+    position: relative;
+    right: 195px
+}
+.label_boleta_grupo{
+    position: relative;
+    left: -13px
+}
+.label_boleta_materia{
+    position: relative;
+    right: 245px
+}
+#materia_input{
+    position: relative;
+    right: 148px
+}
+.label_boleta_semestre_grupo{
+    position: relative;
+    right: 240px
+}
+#semestre_input{
+    position: relative;
+    right: 150px
+}
+.table_space{
+    padding-bottom: 40px;
+}
+.table_arrange{
+    display:flex;
+    justify-content: space-between;
+}
+#semestre_tabla{
+    width: 530px;
+    font-size: 0.8em;
+    /*font-weight: bold;*/
+    -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+}
+.concentrado_contenido{
+    float: left;
+}
+.hidden_input{
+    display: none;
+}
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+/**Control de plataforma y fechas**/
+.date_title_arrange{
+    margin: 0 0 -0 0;
+}
+
+/**carga de materias**/
+#student{
+    display: none;
+}
+#group{
+    display: none;
+}
+/**Concentrado de calificaciones**/
+.concentrated_ratings_average{
+    color: red;
+    font-size: 1.2em;
+    
+}
+.season_grades{
+    text-align: center;
+    background-color: #F5DA81;
+    width: 700px;
+    padding: 20px 0 10px 0;
+    margin: 30px auto 100px auto;
+    border-radius: 15px;
+}
+#season_grades_date{
+    font-size: 1.5em;
+}
+#h3_title_grades_registry{
+    margin: 60 0 -20 0;
+
+}
+#span_season_grades{
+    font-size: 1.5em;
+    color: red;
+}
+/**Registro de Alumnos**/
+
+/** Botones **/
+.btn {
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: transparent!important;
+    border: none;
+    padding: 0 5px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.pen_icon {
+    color: var(--secundario);
+}
+.trash_icon{
+    color: var(--primario);
+}
+.cog_icon{
+    font-size: 1.8rem;
+    padding-top: -20px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 0px;
+}
+.extra_option_input{
+    width: 80px;
+    text-align: right;
+    padding: 10px;
+}
+.status_cog_red{
+    color: var(--primario);
+}
+.status_cog_green{
+    color: var(--secundario);
+}
+.status_cog_gray{
+    color: #495057;
+}
+
+.add_icon{
+    color: #0084ff;
+}
+.eraser_icon{
+    color: #89c4fb;
+}
+
+/**boletas e historial**/
+#report_card_kind{
+    margin-bottom: 50px;
+}
+#per_student{
+    display: none;
+}
+#per_group{
+    display: none;
+}
+#per_group_subjects{
+    display: none;
+}
+#student_historial{
+    display: none;
+}
+
+.loadSubjectsSpan{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    padding: 0 10px; 
+    background: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+}
+/*Correo*/
+
+.mail_body{
+    background-color:  #efefef;
+    font-family: 'PT Sans', sans-serif;
+    /*font-weight: bold;*/
+}
+.mail_contenedor{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+}
+.mail_contenedor h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.input_mail{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 45px;
+}
+.text_area{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    height: 200px!important;
+    width: 100%;
+}
+.button_mail{
+    position: relative;
+    right: -360px;
+    padding: 0;
+    background-color: #0084ff;
+    border-radius: 10px;
+    height: 45px;
+    width: 130px;
+    border: 1px solid #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+.button_mail{
+    left: 120px;
+}
+
+@media only screen and (max-width: 550px){
+    .mail_contenedor{
+        position: relative;
+        background-color: #ffffff;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+        text-align: center;
+        -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+        box-shadow: 0px 10px 21px -9px rgba(0,0,0,0);
+    }
+
+    .principal_icon{
+        margin: 25px 0;
+        width: 200px;
+        height: 200px;
+    }
+    #error_div{
+        margin-top: 10px;
+    }
+    .mail_contenedor h2{
+        margin-top: 0;
+        
+    }
+    .button_mail{
+        left: 0;
+    }
+    .button_mail{
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .double_button{
+        display: flex;
+    }
+}
+/**ADMINISTRATION**/
+#search_user_information{
+    margin-top: 50px;
+}
+/**Reporte Loggin**/
+.colored td{
+    background-color:rgb(98, 0, 255);
+}
+.unread td{
+    background-color:rgb(168, 206, 255);
+} 
+/**Notificaciones**/
+.notification_window{
+    position: relative;
+    display: none;
+}
+.circle_class{
+    position: absolute;
+    right: 75px;
+    bottom: 30px;
+    color: #fd0800;
+    margin: none;
+}
+.notification_window_area{
+    position: relative;
+    display: none;
+}
+.circle_class_report_area{
+    position: absolute;
+    right: 75px;
+    bottom: 60px;
+    color: #fd0800;
+    margin: none;
+}
+/**Asignacion de Materias**/
+
+/**Concentrado de calificaciones Profesores **/
+.principal_screen_teachers{
+    display: none;
+}
+.principal_screen_teachers p{
+    margin: 10px;
+    color: #0084ff;
+    font-size: 2em;
+}
+.principal_screen_teachers img{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 200px;
+}
+.grades_screen_teachers{
+    display: none;
+}
+/**Concentrado de calificaciones Profesores **/
+.principal_screen_students p{
+    margin: 10px;
+    color: #0084ff;
+    font-size: 2em;
+}
+.principal_screen_students img{
+    width: 200px;
+    height: 200px;
+}
+.principal_screen_students h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.contenedor_students{
+    margin: 20px auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 60px;
+    background-color: #ffffff;
+}
+@media only screen and (max-width: 480px){
+    .subject_content{
+        background-color: #fdf9ef;
+        width: 320px!important;
+    }
+    .students_principal_grades{
+        font-size: 0.9rem;
+    }
+    .hide_close_session{
+        display: none;
+    }
+
+    #close_session a{
+        padding: 10px 15px 10px 15px;
+        text-decoration: none;
+        font-size: 2em;
+        text-align: left;
+        margin-right: 0px;
+    }
+
+    .student_information{
+        padding-left: 0!important;
+        text-align: left;
+        
+    }
+}
+@media only screen and (min-width: 720px){
+}
+@media only screen and (min-width: 1080px){
+    .all_subjects{
+        grid-template-columns: repeat(2 ,500px);
+    }
+}
+@media only screen and (min-width: 1550px){
+    .all_subjects{
+        grid-template-columns: repeat(3 ,500px);
+    }
+}
+
+
+/**Boton palido**/
+.status_button_pale_color{
+    background-color: #7c7c7c;
+}
+.status_button_pale_color:hover{
+    background-color: #7c7c7c;
+}
+.all_subjects{
+    display: grid;
+    /*grid-template-columns: repeat(3 ,500px);*/
+    justify-content: center;
+}
+.student_information{
+    padding: 0 0 0 10%;
+    
+}
+/*Calificaciones Alumno*/
+.subject_content{
+    background-color: #fdf9ef;
+    width: 450px;
+    /*min-width: 450px;*/
+    border-radius: 10px;
+    margin: 20px 20px 40px 20px;
+    padding: 20px 40px;
+    -webkit-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 21px -9px rgba(0,0,0,0.75);
+    
+}
+.p_students_shape{
+    text-align: left!important;
+    padding: 0 0 0 0!important;
+    margin: 0!important;
+    font-size: 1em!important;
+}
+.bold_words{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: #000;
+    padding: 0!important;
+    margin: 0!important;
+}
+.p_students_shape_center{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: #000;
+    padding: 0!important;
+    margin: 0 0 10px 0!important;
+    text-align: center!important;
+    font-size: 1em!important;
+}
+.p_students_shape_tittle{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: #000;
+    padding: 0!important;
+    margin: 0!important;
+    text-align: center!important;
+    font-size: 1.2em!important;
+}
+.non_bold_words{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding: 0!important;
+    margin: 0!important;
+}
+.non_bold_average{
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+.non_bold_extra{
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+.p_students_space{
+    margin-left: 20px!important;
+}
+.p_students_average{
+    margin-top: 30px!important;
+}
+.bold_words_average{
+    font-family: 'PT Sans', sans-serif!important;
+    font-weight: bold!important;
+    color: #000!important;
+    font-size: 0.7em!important;
+}
+.total_average{
+    font-family: 'PT Sans', sans-serif!important;
+    font-weight: bold!important;
+    font-size: 0.7em!important;
+    white-space: nowrap;
+}
+.button_key{
+    font-size: 0.9rem;
+}
+.teachers_move{
+    position: relative;
+    left: -85px;
+    top: -50px;
+}
+.students_move{
+    position: relative;
+    left: 75px;
+    top: 55px;
+}
+.table_height{
+    max-height: 800px!important;
+}
+
+/**ERROR**/
+#error_div{
+
+    clear: both;
+}
+.tr_align_centerNColor{
+    text-align: center;
+    background-color: white!important;
+}
+.td_align_centerNColor{
+    text-align: center;
+    background-color: white!important;
+}
+/**.periodo_calificaciones{
+    width: 400px;
+    height: 400px;
+    float: right;
+    background-color: bisque;
+    position: relative;
+    top: -500px;
+}**/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
